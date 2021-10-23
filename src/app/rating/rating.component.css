@@ -1,0 +1,12 @@
+.inactive{
+    height: 2rem;
+    width: 2rem;
+   background-image: url(../../assets/images/empty.png);
+   cursor: pointer;
+}
+.active{
+    height: 2rem;
+    width: 2rem;
+    background-image: url(../../assets/images/star.png);
+    cursor: pointer;
+}

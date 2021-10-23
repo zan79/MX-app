@@ -1,0 +1,20 @@
+<div>
+    <div class="float-end mx-5">
+        <h4>{{rating}} of 5</h4>
+    </div>
+    <div class="d-flex flex-row">
+        <h4 class="float-start">Rating:</h4>
+        <div class="p-0 mx-1" *ngFor="let rate of [1,2,3,4,5]">
+            <div *ngIf="rating >= rate; else elseBlock">
+                <a (click)="onClick(rate)">
+                    <img class="active" src="../../assets/images/star.png" alt="">
+                </a>
+            </div>
+            <ng-template #elseBlock>
+                <a (click)="onClick(rate)">
+                    <img class="inactive" src="../../assets/images/empty.png" alt="">
+                </a>
+            </ng-template>
+        </div>
+    </div>
+</div>

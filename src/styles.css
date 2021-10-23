@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(assets/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+    border-radius: 30px;
+}
+.card-img{
+    border-radius: 30px 10px 10px 30px;
+}
+.glass{
+    border-radius: 50px;
+    backdrop-filter: blur(3px);
+    box-shadow: rgba(173, 26, 63, 0.774) 0px 5px 15px;
+}
+.outline{
+    box-shadow: rgb(194, 17, 85) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.text-justify {
+    text-align: justify;
+  }
